@@ -5,21 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I am Chenjun</title>
     <style>
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            line-height: 35px;
+        }
+        .first {
+            text-indent: 400px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            line-height: 35px;
+            background-color: #2F5DF2;
+            color: #FFFFFF;
+        }
+    </style>
+    <style>
+        img {
+            transform: translateX(300px);
+        }
+        h1,h2,h3,p,br {
+            text-indent: 10%;
+        }
         .center {
             text-align: center;
             background-color: rgb(255,255,0);
         }
-        div {
+        .div1 {
             background-color: antiquewhite;
+        }
+        .div2 {
+            background-color: aquamarine;
+        }
+        .divform {
+            background-color: azure;
+            font-size: large;
+        }
+        .divsurvey {
+            transform: translateX(400px);
+            font-size: large;
         }
         span {
             font-weight: bold;
             font-size: large;
         }
+        a {
+            text-decoration: none;
+        }
+        .schedule {
+            border-style: solid;
+            border-collapse: collapse; 
+        }
     </style>
 </head>
 <body>
-    <div>
+    <div class="divform">
+        <form action="javascript:alert('June你好')">
+            <table>
+                <tr>
+                    <th colspan="3"><h2 class="first">Log in to check your identity</h2></th>
+                </tr>
+                <tr>
+                    <td class="first">Name</td>
+                    <td>
+                        <input type="text" placeholder="Please enter your name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="first">Password</td>
+                    <td>
+                        <input type="password" placeholder="Please enter the password" required>
+                    </td>
+                    <td> &nbsp;(Hint: My birthday)</td>
+                </tr>
+                <tr>
+                    <td class="first"></td>
+                    <td>
+                        <input type="submit" value="确认是June本人">
+                        <input type="checkbox">如果不是本人我就变成<a href="j6.jpeg" target="_blank" alt="健身肚">这样</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="divsurvey">
+        <p style="transform: translateX(-150px);"><bold>Congratulation!</bold></p>
+        <p style="transform: translateX(-150px);">Now, you need to complete a survey.</p>
+        <ol>
+            <li>
+                <form>
+                    <label for="person">Who do you like most?</label>
+                    <select name="person_name" id="person">
+                        <option>Select</option>
+                        <option>Jiali Ding</option>
+                        <option>Toffee Dog</option>
+                        <option>16 Cat</option>
+                        <option>Oreo</option>
+                        <option>Middle school kiss</option>
+                        <option>My Ex</option>
+                    </select>
+                </form>
+            </li>
+            <li>What sports do you like?
+                <form>
+                    <input type="checkbox" name="sports" id="bb">
+                    <label for="bb">Body building</label><br>
+                    <input type="checkbox" name="sports" id="pl">
+                    <label for="pl">Power Lifting</label><br>
+                    <input type="checkbox" name="sports" id="b">
+                    <label for="b">Bouldering</label><br>
+                    <input type="checkbox" name="sports" id="uf">
+                    <label for="uf">Ultimate Frisbee</label><br>
+                    <input type="checkbox" name="sports" id="r">
+                    <label for="r">Running</label>
+                </form>
+            </li>
+            <li>
+                What is your favoriate hobby?
+                <form>
+                    <input type="radio" name="hobby" id="s">
+                    <label for="s">Sleeping</label><br>
+                    <input type="radio" name="hobby" id="e">
+                    <label for="e">Eatting</label><br>
+                    <input type="radio" name="hobby" id="sh">
+                    <label for="sh">Shitting</label>
+                </form>
+            </li>
+        </ol>
+        <p><h2 style="transform: translateX(-150px);">This is my daily routine</h2></p>
+        <table class="schedule">
+            <tr>
+                <th class="schedule">Schedule</th>
+                <th class="schedule">monday</th>
+                <th class="schedule">Tueasday</th>
+                <th class="schedule">Wednesday</th>
+            </tr>
+            <tr>
+                <td class="schedule">Morning</td>
+                <td colspan="3" class="schedule">Sleeping</td>
+            </tr>
+            <tr>
+                <td class="schedule">Afternoon</td>
+                <td colspan="3" class="schedule">Shitting</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="schedule">Evening</td>
+                <td colspan="3" class="schedule">Eatting</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="schedule">Beatting Toffee</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="div1">
         <h1 class="center"> Who I am</h1>
         <p>My name is Chenjun Xing, but you can also call me June.</p>
         <h3>This is my photo</h3>
@@ -34,9 +173,11 @@
         <p>Yeah, that's me</p>
         <p><s>cute</s><u>stupid</u></p>
     </div>
-       
-    <h1 class="center">Where I am</h1>
-    <p>I am currently in London</p>
+
+    <div class="div2">
+        <h1 class="center">Where I am</h1>
+        <p>I am currently in London</p>
+    </div>
     
 </body>
 </html>
