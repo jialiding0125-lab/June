@@ -30,9 +30,15 @@
         }
         .div1 {
             background-color: antiquewhite;
+            height: 500px;
+            overflow: auto;
+            margin-bottom: 100px;
+            margin-top: 100px;
         }
         .div2 {
             background-color: aquamarine;
+            height: 500px;
+            overflow: auto;
         }
         .divform {
             background-color: azure;
@@ -41,6 +47,7 @@
         }
         .divsurvey {
             font-size: large;
+            background-color: rgb(216, 175, 211);
         }
         span {
             font-weight: bold;
@@ -52,6 +59,16 @@
         .schedule {
             border-style: solid;
             border-collapse: collapse; 
+        }
+        .head {
+            width: 100px;
+            height: auto;
+            border-radius: 100px;
+            margin-left: 60%;
+            margin-bottom: -200px;
+            z-index: 1;
+            position: sticky;
+            top: 0px;
         }
     </style>
     <style>
@@ -70,6 +87,7 @@
     </style>
 </head>
 <body>
+    <img class="head" src="j2.jpeg" alt="法棍">
     <div class="divform">
         <form action="javascript:alert('June你好')">
             <table>
