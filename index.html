@@ -50,7 +50,7 @@
             background-color: rgb(216, 175, 211);
         }
         #gamepage {
-            background-color: rgb(191, 156, 234);
+            background-color: rgb(235, 175, 207);
             height: 500px;
             overflow: auto;
             margin-bottom: 100px;
@@ -77,6 +77,10 @@
             position: sticky;
             top: 0px;
         }
+        #transform:hover {
+            box-shadow:  1px 3px 10px 10px #5E80F4;
+            transform: translate(350px) scale(4,4);
+        }
     </style>
     <style>
         input[type="submit"]:link {
@@ -95,14 +99,14 @@
 </head>
 <body>
     <a href="journal.txt" target="_blank" alt="journal">
-        <img class="head" src="j2.jpeg" alt="法棍">
+        <img class="head" src="j7.jpg" alt="小狗">
     </a>
     
     <div class="divform">
-        <form action="index.html#gamepage">
+        <form action="June.html#gamepage">
             <table>
                 <tr>
-                    <th colspan="3"><h2>Log in to check your identity</h2></th>
+                    <th colspan="3"><h2 style="text-shadow: 3px 5px 4px #565656;;">Log in to check your identity</h2></th>
                 </tr>
                 <tr>
                     <td>Name</td>
@@ -206,7 +210,7 @@
         <h1 class="center"> Who I am</h1>
         <p>My name is Chenjun Xing, but you can also call me June.</p>
         <h3>This is my photo</h3>
-        <img src="j2.jpeg" width="300" alt="法棍">
+        <img id="transform" src="j2.jpeg" width="300" alt="法棍">
         <p>Cute?<br>NOT???<br>alright, let's look at this one</p>
         <img src="j5.jpeg" width="300px" alt="站立肚子">
         <p>AND</p>
