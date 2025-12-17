@@ -28,14 +28,27 @@
             text-align: center;
             background-color: rgb(255,255,0);
         }
-        .qrcode {
-            margin-left: 100px;
+        .qrheart {
+            transform: translateX(-250px);
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: left;
         }
+    
         .qrcode img {
             width: 300px;
             transform: translateX(-60px);
         }
         .qrcode img:hover {
+            box-shadow:  1px 3px 10px 10px #5E80F4;
+            transform: translate(-50px,-200px) scale(2,2);
+        }
+        
+        .heart img{
+            width: 300px;
+            transform: translateX(-60px);
+        }
+        .heart img:hover {
             box-shadow:  1px 3px 10px 10px #5E80F4;
             transform: translate(-50px,-200px) scale(2,2);
         }
@@ -157,12 +170,22 @@
                 </tr>
             </table>
         </form>
-        <div class="qrcode">
-            <h4>This is my QR Code.</h4>
-            <a href="June.png" target="_blank">
-                <img src="June.png" alt="QR Code">
-            </a>
+
+        <div class="qrheart">
+            <div class="qrcode">
+                <h4>This is my QR Code.</h4>
+                <a href="June.png" target="_blank">
+                    <img src="June.png" alt="QR Code">
+                </a>
+            </div>
+            <div class="heart">
+                <h4>This is me</h4>
+                <a href="June_heart.png" target="_blank">
+                    <img src="June_heart.png" alt="heart picture">
+                </a>
+            </div>
         </div>
+        
     </div>
 
     <div class="divsurvey" style="padding: 2% 30%;">
